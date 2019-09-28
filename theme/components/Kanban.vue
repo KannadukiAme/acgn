@@ -24,7 +24,7 @@ export default {
   height 100%
   background center no-repeat url('/kanban1.jpg')
   // filter blur(3px)
-  filter grayscale(60%) drop-shadow(2px 2px 1px black)
+  filter grayscale(60%) drop-shadow(0px 2px 10px black)
   display flex
   justify-content center
   align-items center

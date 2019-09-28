@@ -1,7 +1,7 @@
 ---
 tag: anime
 date: 2016-10-11 20:44:40
-author: KannadukiAme
+author: 神無月雨
 summary: 关于Clannad的想法
 ---
 

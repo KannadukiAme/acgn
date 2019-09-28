@@ -33,6 +33,7 @@ export default {
   justify-content space-between
   align-items center
   padding 10px 15px 10px 15px
+  filter drop-shadow(0px 2px 3px black)
   // border-bottom 1px solid lighten($accentColor, 80%)
   .header-nav_link
     display flex

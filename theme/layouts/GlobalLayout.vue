@@ -26,7 +26,7 @@ export default {
   grid-template-rows 60px 300px 1fr 120px
   grid-template-areas 'header' 'kanban' 'content' 'footer'
   .layout_header
-    background-color #fff
+    background-color $bgColor
     grid-area header
     position -webkit-sticky
     position sticky
