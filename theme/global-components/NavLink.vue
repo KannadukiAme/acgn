@@ -17,6 +17,7 @@ export default {
 <style lang="stylus">
 .nav-link
   margin 0 10px 0 10px
+  font-size 15px
   display inline-block
   .nav-link_text
     text-decoration none
