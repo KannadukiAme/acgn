@@ -4,7 +4,7 @@
       <div class="layout-article-item" v-for="(page,index) in $pagination.pages" :key="index">
         <!-- 放置图片 -->
         <div class="layout-article-item-image">
-          <img src="/kanban1.jpg" alt />
+          <img :src="page.frontmatter.cover || '/akarin.png'" alt />
         </div>
         <!-- 放置图片结束 -->
 
@@ -29,7 +29,7 @@
         <div class="layout-article-item-footer">
           <!-- <router-link class="page-link" :to="page.path">{{ page.title }}</router-link> -->
           <div>标签 {{ page.frontmatter.tag }}</div>
-          <div>MORE...</div>
+          <router-link class="layout-article-item-footer_more" :to="page.path">MORE...</router-link>
         </div>
         <!-- 放置尾部结束 -->
       </div>
@@ -95,4 +95,11 @@ export default {
   height 50px
 .layout-article-item-summary_date
   margin-left 10px
+.layout-article-item-footer_more
+  text-decoration none
+  color #DDDDDD
+.layout-article-item-footer_more:hover
+  margin-bottom -2px
+  border-bottom 2px solid $accentColor
+  color $accentColor
 </style>

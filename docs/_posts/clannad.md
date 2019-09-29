@@ -2,6 +2,7 @@
 tag: anime
 date: 2016-10-11 20:44:40
 author: 神無月雨
+cover: /clannad.jpg
 summary: 关于Clannad的想法
 ---
 
