@@ -48,4 +48,6 @@ export default {
   font-weight 500
   text-decoration none
   color #000
+.header-nav_search input
+  border-radius 0
 </style>
