@@ -28,6 +28,12 @@ module.exports = {
         ]
       }
     ],
-    ['@vuepress/nprogress']
+    ['@vuepress/nprogress'],
+    [
+      '@vuepress/search',
+      {
+        searchMaxSuggestions: 10
+      }
+    ]
   ]
 }

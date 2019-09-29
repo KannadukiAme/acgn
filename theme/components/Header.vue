@@ -4,6 +4,7 @@
       <router-link class="header-logo_title" :to="'/'" exact>{{$site.title}}</router-link>
     </div>
     <div class="header-nav">
+      <SearchBox class="header-nav_search" />
       <div class="header-nav_link" v-if="$themeConfig.nav">
         <NavLink
           :link="item.link"
@@ -17,11 +18,13 @@
 </template>
 
 <script>
+import SearchBox from '@SearchBox'
 import NavLink from '@theme/global-components/NavLink.vue'
 
 export default {
   name: 'header',
   components: {
+    SearchBox,
     NavLink
   }
 }
@@ -35,8 +38,11 @@ export default {
   padding 10px 15px 10px 15px
   filter drop-shadow(0px 2px 3px black)
   // border-bottom 1px solid lighten($accentColor, 80%)
-  .header-nav_link
+  .header-nav
     display flex
+    align-items center
+    .header-nav_link
+      display flex
 .header-logo_title
   font-size 28px
   font-weight 500
